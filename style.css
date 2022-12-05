@@ -11,26 +11,30 @@ body {
   nav {
     padding-top: 14px;
     margin-right: 35px;
-    font-size: 2.25rem;
+    font-size: 2.3rem;
     font-family: "NewYork";
     color: #e36849;
     text-decoration: none;
     display:flex;
     justify-content: flex-end;
+    text-shadow: 2px 5px 4px white;
 
 }
 a {
   text-decoration: none;
-  color:
+  color: #e36849;
 }
  .profile {
-  max-width: 200px;
+  max-width: 225px;
   border-radius: 50px;
   border-image: 12px;
   border-color: #C0BA6E;
   border-style: solid;
  }
-
+#box{
+  margin-left: 55px;
+}
+/* All of this is for the work info and photos */
  .info {
   display: flex;
   flex-direction: column;
@@ -38,16 +42,28 @@ a {
   align-content: flex-start;
   padding: 2rem;
  }
+
+.text {
+  font-size: 1.25rem;
+  color: #e9311a;
+  font-family: "Cyrene";
+  text-shadow: 2px 5px 4px #064c72;
+  opacity: 83%;
+}
  .group {
   flex: flex;
   flex-wrap: wrap;
   flex-direction: column;
  }
 
+.photos {
+display:flex
+}
+
  h2 {
-  font-family: "NewYork";
+  font-family: 'NewYork', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #137c78;
-  font-size: 2rem;
+  font-size: 2.12rem;
   font-weight: bold;
   margin-left: 12px;
  }
@@ -68,11 +84,11 @@ a {
  #work {
   display: flex;
   margin-top: 100px;
+  /* flex-wrap: wrap; */
  }
 
  .dino {
   display: flex;
-  flex-wrap: wrap;
   max-width: 600px;
   border: 4px;
   border-style: solid;
@@ -94,6 +110,7 @@ a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   color: #C0BA6E;
+  background-color: antiquewhite;
  }
  .landing{
   display: flex;
@@ -111,23 +128,29 @@ a {
   margin-top: 100px;
 
 }
- .contact {
+ #contact {
   display: flex;
   text-decoration: none;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
   font-size: 1.25rem;
   color:#ed6335;
   background-color: antiquewhite;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 
-@media (max-width: 400px) {
-  #work { display: flex;
-    flex-wrap: wrap;
-    width:50%;
+@media screen and (max-width: 768px) {
+  .photos{ 
+    display: block;
+    justify-content: center;
+    align-items: center;
 
   }
-
+ .group {
+  width: 90%;
+  min-width:80%;
+  max-width: 92%;
+ }
 }
+
   
